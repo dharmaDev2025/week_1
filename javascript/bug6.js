@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+//use middleware
+
+app.use(express.json());
 
 app.post('/users', (req, res) => {
   const name = req.body.name;
